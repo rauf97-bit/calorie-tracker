@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="dist/styles.css">
+</head>
+<body>
+  <main>
+    <nav class="bg-blue-500 p-3">
+      <div class="container grid grid-cols-3 mx-auto">
+        <div class="col-span-1"></div>
+        <div class="col-span-1">
+          <h2 class="text-center text-3xl text-white">Calorie Tracker</h2>
+        </div>
+        <div class="text-right col-span-1">
+          <button class="px-7 py-2 rounded hover:opacity-80 text-white bg-blue-300" id="clear-btn">Clear All</button>
+        </div>
+      </div>
+      
+    </nav>
+    <div class=" container w-3/4 mx-auto mt-1 p-3 ">
+      <div class="rounded shadow-lg p-3">
+        <h2 class="text-2xl">Add Meal / Food Item</h2>
+        <form id="my-form">
+          <div class="grid grid-cols-2 gap-x-2 ">
+            <div class="col-span-1 grid grid-flow-row">
+              <label for="meal">Meal</label>
+                <input type="text" placeholder="Add Meal" class="py-3 border-0 border-b-2 border-black " id="meal">
+            </div>
+            <div class="col-span-1 grid grid-flow-row">
+              <label for="calorie">Calorie</label>
+                <input type="number" placeholder="Add Calorie" class="py-3 border-0 border-b-2 border-black" id="calorie">
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <button class="px-7 py-2 rounded my-3 hover:bg-blue-500 text-2xl text-white bg-blue-700" id="add-btn">+ Add Meal</button>
+              <button class="px-7 py-2 rounded my-3 hover:opacity-80 text-3xl text-white bg-red-500" id="update-btn">% Update Meal</button>
+              <button class="px-7 py-2 rounded my-3 hover:opacity-80 text-3xl text-white bg-yellow-700" id="delete-btn">X Delete Meal</button> 
+            <button class="px-7 mr-0 py-2 rounded my-3 hover:opacity-80 text-2xl text-white bg-gray-700" id="back-btn">&lArr; Back</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container text-center w-3/4 mx-auto">
+      <h2 class="text-4xl">Total Calorie : <span class="total">0</span></h2>
+    </div>
+      <ul class="container rounded shadow-md w-3/4 mx-auto my-1 p-3" id="list-collection">
+        <!-- <li class="border-0 border-b-2 border-gray-300 py-2 text-2xl items-center flex justify-between" id="item-0" >
+          <strong>Steak meat : <em>1200 Calorie</em></strong>
+          <button class="px-2 text-xl py-1 rounded hover:opacity-80  text-white bg-gray-700" id="edit">&Leftrightarrow; Edit</button>
+        </li> -->
+      </ul>
+  </main>
+
+  <script src="dist/app.js"></script>
+</body>
+</html>
